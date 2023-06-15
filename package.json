@@ -1,0 +1,31 @@
+{
+  "name": "pesos2dolar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server/server.js",
+    "dev": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Nahuel74/pesos_dolar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nahuel74/pesos_dolar/issues"
+  },
+  "homepage": "https://github.com/Nahuel74/pesos_dolar#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jquery": "^3.7.0",
+    "node-fetch": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
