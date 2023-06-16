@@ -74,6 +74,10 @@ const commands = [
             required: true
             }
         ]
+    },
+    {
+        name: 'precios',
+        description: 'Devuelve una lista ordenada con todos los valores'
     }
 ]
 

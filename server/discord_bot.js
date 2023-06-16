@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client({ intents: 33281 })
 const { calc } = require('./calc')
+const { chart } = require('./prices')
 
 const getData = async () => {
     try{
@@ -61,6 +62,9 @@ client.on("interactionCreate" , async(interaction) => {
             break
         case 'pesos_exterior':
             interaction.reply(await data(interaction.options.get('input').value, 13))
+            break
+        case 'precios':
+            interaction.reply(chart(await getData()))
             break
         default:
             break
