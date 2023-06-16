@@ -1,7 +1,7 @@
 const chart = (data) => {
     const chart = "```\n" +
-    "Oficial Compra| $" + data[2] + "\n" +
-    "Oficial Venta | $" + data[3] + "\n" +
+    "Oficial Compra| $" + data[4] + "\n" +
+    "Oficial Venta | $" + data[5] + "\n" +
     "Blue Compra   | $" + data[0] + "\n" +
     "Blue Venta    | $" + data[1] + "\n" +
     "Bolsa Compra  | $" + data[6] + "\n" +
