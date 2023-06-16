@@ -1,8 +1,6 @@
 # Instructions
 
-npm install 
-
-[create a discord application and bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
+Create a discord application and bot: https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot
 
 create a ".env" in main folder with:
 
@@ -14,6 +12,8 @@ create a ".env" in main folder with:
 	GUILD_ID = "your_guild_id"
 ```
 
-node server/discord_commands.js
-
-npm start
+- npm install
+ 
+- node server/discord_commands.js
+ 
+- npm start
