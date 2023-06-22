@@ -39,6 +39,9 @@ const apiKey = process.env.DISCORD_API_KEY
 
 client.once("ready", async() => {
     console.log("El bot está activo")
+    
+    const channel = await client.channels.fetch("1116906024436240427")
+    channel.send({ content: `Estoy activo!` })
 })
 
 client.on("interactionCreate" , async(interaction) => {
