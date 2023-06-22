@@ -3,6 +3,10 @@ const client = new Discord.Client({ intents: 33281 })
 const { calc } = require('./calc')
 const { chart } = require('./prices')
 
+require("dotenv").config()
+const apiKey = process.env.DISCORD_API_KEY
+const main_channel = process.env.CHANNEL_ID
+
 const getData = async () => {
     try{
         const web = await fetch('http://localhost:3000/fetch')
@@ -34,13 +38,10 @@ const data = async (input, dataIndex) => await getData().then( data => calc(inpu
     13: Pesos compras al extranjero
 */
 
-require("dotenv").config()
-const apiKey = process.env.DISCORD_API_KEY
-
 client.once("ready", async() => {
     console.log("El bot está activo")
     
-    const channel = await client.channels.fetch("1116906024436240427")
+    const channel = await client.channels.fetch(main_channel)
     channel.send({ content: `Estoy activo!` })
 })
 

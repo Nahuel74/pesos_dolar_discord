@@ -10,6 +10,8 @@ create a ".env" in main folder with:
 	CLIENT_ID = "your_client_id"
 
 	GUILD_ID = "your_guild_id"
+
+	CHANNEL_ID = "main_channel_id"
 ```
 
 - npm install
